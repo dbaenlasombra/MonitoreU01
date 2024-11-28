@@ -46,7 +46,7 @@ EOF
 
    USE_ACTUAL=`df -h | grep u01 | awk '{print $5}' | sed -r 's/%//g'`
 
-   printf "Mantenimient ${NAME}\nSize Ant=${USE}\nAct=${USE_ACTUAL}"  | mailx -s "[XXXX][XXXX] Mantenimiento ${NAME} with more ${USE} - ${TODAY}." ${EMAIL}
+   printf "Mantenimient ${NAME}\nSize Ant=${USE}\nAct=${USE_ACTUAL}"  | mailx -s "[XXXX] Mantenimiento ${NAME} with more ${USE} - ${TODAY}." ${EMAIL}
 
 
   fi
